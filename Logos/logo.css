@@ -1,0 +1,187 @@
+
+body {
+    height: 100vh;
+    overflow-x: hidden;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: rgb(229, 196, 196); */
+    background-color: whitesmoke;
+    margin: 1rem;
+}
+
+/* hashnode */
+.hashnode .square {
+    height: 1.95rem;
+    width: 1.95rem;
+    background-color: #2962ff;
+    border-radius: 0.6em;
+    transform: rotate(45deg);
+    transition: var(--transition-properties);
+    margin: 5px;
+    -webkit-mask: radial-gradient(#0000 28%, #000 28%);
+  mask: radial-gradient(#0000 28%, #000 28%);
+}
+
+.hashnode .square:hover {
+    background-color: green;
+}
+/* masking to make center transparent */
+
+/* ------------------------------ */
+
+/* Frontend Mentor */
+.logo:nth-child(2) {
+    --circle-color: rgb(58, 121, 185);
+    --line-color: rgb(82, 198, 200);
+    
+}
+
+/* .frontendMentor {
+    margin: 0;
+    padding: 0;
+    position: relative;
+} */
+
+.frontendMentor .circle {
+    width: 3rem;
+    height: 3rem;
+    border: 0.3rem solid var(--circle-color);
+    border-color: transparent transparent var(--circle-color) transparent;
+    transform: rotate(42deg) scale(0.65);
+    border-radius: 50%;
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+.frontendMentor .dot1 {
+    width: 0.3rem;
+    height: 0.3rem;
+    background-color: var(--circle-color);
+    border-radius: 50%;
+    position: relative;
+    top: 2.48rem;
+    left: 0.17rem;
+}
+
+.frontendMentor .dot2 {
+    width: 0.3rem;
+    height: 0.3rem;
+    background-color: var(--circle-color);
+    border-radius: 50%;
+    position: relative;
+    top: 2.25rem;
+    left: 2.5rem;
+}
+
+.frontendMentor .line {
+    height: 2.4rem;
+    width: 0.3rem;
+    border-radius: 0.6rem;
+    background-color: var(--line-color);
+    position: relative;
+    top: -0.4rem;
+    left: 0.9rem;
+    transform: rotate(-42deg);
+}
+
+.frontendMentor .arrow {
+    position: relative;
+    top: -0.65rem;
+    left: 0.1rem;
+}
+
+/* bottom part */
+.frontendMentor .arrow1 {
+    height: 0.3rem;
+    width: 1.4rem;
+    border-radius: 10px;
+    background-color: var(--line-color);
+    position: relative;
+    top: -1.7rem;
+    left: 1.5rem;
+    transform: rotate(-20deg);
+}
+/* top part */
+.frontendMentor .arrow2 {
+    height: 0.3rem;
+    width: 1.4rem;
+    border-radius: 10px;
+    background-color: var(--line-color);
+    position: relative;
+    top: -2.35rem;
+    left: 1.2rem;
+    transform: rotate(-65deg);
+}
+
+.frontendMentor p {
+    position: relative;
+    top: -0.65rem;
+    /* left: 2rem; */
+}
+
+.frontendMentor:hover {
+    --line-color: green;
+    --circle-color: green;
+}
+
+/* common style for icons */
+.icons .fab{
+    font-size: 40px;
+}
+/* font-awesome icons color */
+.icon-html5 i{
+    color: #e34c26;
+}
+.icon-css3 i{
+    color: #264DE4;
+}
+.icon-js i{
+    color: #F0DB4F;
+}
+.icon-github i{
+    color: #2B3137;
+}
+.icon-react i{
+    color: #61DBFB;
+}
+.icon-python i{
+    color: #306998;
+}
+
+/* hover */
+.icons:hover i{
+    color: green;
+}
+
+/* svg icons */
+/* tailwind */
+.icons .icon-tailwind path {
+fill: #38bdf8; 
+}
+.icons .icon-tailwind:hover path {
+fill: green; 
+}
+
+/* git */
+.icons .icon-git path {
+fill: #f03c2e;
+}
+.icons .icon-git:hover path {
+fill: green;
+}
+
+/* django */
+.icons .icon-django svg #bg{
+fill: #092E20;
+}
+/* for text of "django" */
+/* .icons .icon-django svg g path {
+fill: var(--color-primary);
+} */
+.icons .icon-django:hover svg #bg {
+    fill: green;
+}
+/* django icon end */

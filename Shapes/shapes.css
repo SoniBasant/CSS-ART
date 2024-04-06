@@ -1,0 +1,429 @@
+
+
+body {
+    height: 100vh;
+    overflow-x: hidden;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.square {
+    width: 50px;
+    height: 50px;
+    background-color: pink;
+}
+
+.rectangle1 {
+    width: 50px;
+    height: 20px;
+    background-color: orange;
+}
+
+.rectangle2 {
+    width: 50px;
+    height: 20px;
+    background-color: orange;
+    border-radius: 3px;
+    border: 5px solid;
+    border-color: #04f955 #1a74e5;
+}
+
+.circle1 {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: aquamarine;
+}
+
+.circle2 {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 5px solid rgb(174, 46, 68);
+    border-color: #04f955 #1a74e5;
+    background-color: rgba(36, 21, 168, 0.767);
+}
+
+.ellipse {
+    width: 40px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: purple;
+}
+
+.diamond {
+    width: 30px;
+    height: 30px;
+    transform: rotate(45deg);
+    background-color: #34f;
+}
+
+.triangle0 {
+    width: 10px;
+    height: 10px;
+    border-top: 20px solid lightseagreen;
+    border-left: 20px solid blue;
+    border-right: 20px solid green;
+    border-bottom: 40px solid red;
+}
+
+.triangle1 {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    /* for left slant */
+    border-right: 20px solid transparent;
+    /* for right slant */
+    border-bottom: 40px solid red;
+    /* for height */
+    /* border-radius: 5px; */
+}
+
+.triangle2 {
+    width: 0;
+    height: 0;
+    border-left: 40px solid transparent;
+    /* for base */
+    border-bottom: 20px solid violet;
+    /* for height */
+}
+
+.parallelogram1 {
+    width: 50px;
+    height: 20px;
+    background: #3d3;
+    transform: skew(-15deg);
+    /* default skew is X */
+    /* minus to skew left, plus to skew right */
+}
+
+.parallelogram2 {
+    width: 50px;
+    height: 20px;
+    background: rgb(91, 63, 27);
+    transform: skewY(15deg);
+    /* minus to skew bottom, plus to skew top */
+}
+
+.drop1 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50% 0% 50% 50%;
+    /* left top, right top, bottom right, bottom left */
+    background-color: aqua;
+    transform: rotate(-45deg);
+}
+
+.drop2 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50% 0% 50% 50%;
+    background: linear-gradient(220deg, #0ff0ff 10%, #0093 100%);
+    box-shadow: inset 2.5px -1.5px 0.5px 0.25px rgba(0, 0, 0, 0.1), inset -3.5px -1.5px 0.5px 1.5px rgba(255, 255, 255, 0.2);
+    transform: rotate(-45deg);
+}
+
+.drop3 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50% 0% 50% 50%;
+    background: linear-gradient(220deg, #0ff0ff 10%, #0093 100%);
+    box-shadow: inset 1px -2px 5px 0.25px;
+    transform: rotate(-45deg);
+}
+
+.drop4 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    /* background: linear-gradient(220deg, #0ff0ff 10%, #0093 100%); */
+    box-shadow: -10px 7px 8px #757778,
+    inset 2px -2px 5px #838383,
+    inset 5px -5px 5.5px #dbeaf0,
+    /* -5px -7.5px 10px #616263, */
+    inset 10px -10px 11px #9ea09c,
+    inset 0.5px 1.5px 2.5px #a1a3a0;
+    /* inset -1.5px 1.5px 2.5px #484c55; */
+    transform: rotate(-45deg);
+}
+
+.drop4-1 {
+    width: 50px;
+    height: 50px;
+    /* border-radius: 50%; */
+    box-shadow: -10px 7px 8px #04f955,
+    inset 2px -2px 5px #f80303,
+    inset 5px -5px 5.5px #6b0e5b,
+    -5px -7.5px 4px #616263,
+    inset 10px -10px 11px #8606f7,
+    inset 0.5px 1.5px 2.5px #fa6508ea,
+    inset -1.5px 1.5px 2.5px #06f4e0;
+    /* transform: rotate(-45deg); */
+}
+
+/* drop5 start */
+.drop5 {
+    position: relative;
+    height: 70px;
+    width: 70px;
+    background: #54abfb;
+    /* background: green; */
+    border-radius: 51% 49% 48% 52% / 62% 44% 56% 38%;
+    opacity: 0.8;
+    border: 1px solid #3d93ff;
+}
+
+.drop5::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #318cfe;
+    /* background: red; */
+    border-radius: 51% 49% 48% 52% / 62% 44% 56% 38%;
+    box-shadow: 
+    -6px 10px 5px #1b6cfb, 
+    -13px 20px 10px #1b6cfb, 
+    inset -2px 2px 3px #1b6cfb, 
+    inset 0.7px 2px 3px #1a74e5, 
+    inset 7px -7px 8px white, 
+    inset 13px -13px 14px #a8ceff;
+}
+
+/* two bluish-whitish spot */
+.drop5::after {
+    content: "";
+    position: absolute;
+    height: 13px;
+    width: 13px;
+    background: #e6fdfb;
+    /* background: #04f955; */
+    border-radius: 44% 56% 46% 54% / 36% 50% 50% 64%;
+    left: 40px;
+    top: 13px;
+    box-shadow: 5px 13px 0 -3px white;
+    opacity: 0.8;
+}
+
+/* drop5 ends */
+
+/* drop6 start */
+.drop6 {
+    height: 50px;
+    width: 50px;
+    position: relative;
+    border-radius: 58% 43% 33% 64%/ 50% 38% 53% 50%;
+    background: transparent;
+    box-shadow: inset 2px 6px 6px 0 #c9c9c9,
+    inset 6px 15px 5px 0px #e0e0e0,
+    3px 6px 6px 0px #c9c9c9;
+}
+/* elongated reflection */
+.drop6::before {
+    content: '';
+    border-radius: 37% 54% 46% 46%;
+    background: white;
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 16px;
+    height: 5px;
+    transform: rotate(-30deg);
+}
+/* small circular reflection */
+.drop6::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    background: white;
+    height: 4px;
+    width: 4px;
+    top: 20px;
+    left: 6px;
+}
+/* drop6 end */
+
+.leaf {
+    width: 45px;
+    height: 45px;
+    background-image: linear-gradient(to right, rgb(149, 231, 101), rgb(198, 148, 77));
+    border-radius: 0 100%;
+}
+
+.blob0 {
+    width: 40px;
+    height: 40px;
+    background-color: #318cfe;
+    border-radius: 50%;
+}
+
+.blob0-1 {
+    width: 40px;
+    height: 40px;
+    background-color: #318cfe;
+    border-radius: 30%;
+}
+
+.blob1 {
+    width: 40px;
+    height: 40px;
+    background-color: #318cfe;
+    border-radius: 50% / 30%;
+}
+
+.blob1-1 {
+    width: 40px;
+    height: 40px;
+    background-color: #318cfe;
+    border-radius: 50% / 40% 30% 30%;
+}
+
+.blob1-2 {
+    width: 40px;
+    height: 40px;
+    background-color: #318cfe;
+    border-radius: 50% / 40% 30% 30% 30%;
+}
+
+.blob2 {
+    width: 40px;
+    height: 40px;
+    background-color: #318cfe;
+    border-radius: 50% 30%/ 30%;
+}
+
+.blob2-1 {
+    width: 40px;
+    height: 40px;
+    background-color: #318cfe;
+    border-radius: 50% 30%/ 40% 30%;
+}
+
+.blob2-2 {
+    width: 40px;
+    height: 40px;
+    background-color: #318cfe;
+    border-radius: 50% 30% / 40% 30% 30%;
+}
+
+.blob2-3 {
+    width: 40px;
+    height: 40px;
+    background-color: #318cfe;
+    border-radius: 50% 30% / 40% 30% 30% 40%;
+}
+
+.blob3 {
+    width: 40px;
+    height: 40px;
+    background-color: #318cfe;
+    border-radius: 50% 30% 30%/ 30%;
+}
+
+.blob4 {
+    width: 40px;
+    height: 40px;
+    background-color: #318cfe;
+    border-radius: 50% 30% 30% 30% / 30%;
+}
+
+.blob5 {
+    width: 40px;
+    height: 40px;
+    background-color: #318cfe;
+    border-radius: 50% 30% / 40%;
+}
+
+.blob5-1 {
+    width: 40px;
+    height: 40px;
+    background-color: #318cfe;
+    border-radius: 50% 30% 60% / 40%;
+}
+
+.blob5-2 {
+    width: 40px;
+    height: 40px;
+    background-color: #318cfe;
+    border-radius: 50% 30% 60% 40% / 40%;
+}
+
+.blob6 {
+    width: 40px;
+    height: 40px;
+    background-color: #318cfe;
+    border-radius: 50% / 40% 30%;
+}
+
+.blob7 {
+    width: 40px;
+    height: 40px;
+    background-color: #318cfe;
+    border-radius:  51% 49% 48% 52%;
+}
+
+.blob7-1 {
+    width: 40px;
+    height: 40px;
+    background-color: #318cfe;
+    border-radius:  51% 49% 48% 52% / 62%;
+}
+
+.blob7-2 {
+    width: 40px;
+    height: 40px;
+    background-color: #318cfe;
+    border-radius:  51% 49% 48% 52% / 62% 44%;
+}
+
+.blob7-3 {
+    width: 40px;
+    height: 40px;
+    background-color: #318cfe;
+    border-radius:  51% 49% 48% 52% / 62% 44% 56%;
+}
+
+.blob7-4 {
+    width: 40px;
+    height: 40px;
+    background-color: #318cfe;
+    border-radius:  51% 49% 48% 52% / 62% 44% 56% 38%;
+}
+
+.blob8 {
+    width: 40px;
+    height: 40px;
+    background-color: #318cfe;
+    border-radius: 58% 43% 33% 64%;
+}
+
+.blob8-1 {
+    width: 40px;
+    height: 40px;
+    background-color: #318cfe;
+    border-radius: 58% 43% 33% 64% / 50%;
+}
+
+.blob8-2 {
+    width: 40px;
+    height: 40px;
+    background-color: #318cfe;
+    border-radius: 58% 43% 33% 64% / 50% 38%;
+}
+
+.blob8-3 {
+    width: 40px;
+    height: 40px;
+    background-color: #318cfe;
+    border-radius: 58% 43% 33% 64% / 50% 38% 53%;
+}
+
+.blob8-4 {
+    width: 40px;
+    height: 40px;
+    background-color: #318cfe;
+    border-radius: 58% 43% 33% 64% / 50% 38% 53% 50%;
+}

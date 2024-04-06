@@ -1,0 +1,89 @@
+
+:root {
+    --square-length: 50px;
+    --square1-color: red;
+    --square2-color: rgb(255, 0, 221);
+    --square3-color: rgb(144, 0, 255);
+    --square4-color: rgb(255, 234, 0);
+    --square5-color: rgb(0, 255, 13);
+    --square6-color: rgb(0, 204, 255);
+}
+/* shapes in background */
+
+.shapes {
+    position: absolute;
+}
+
+.square1 {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: var(--square-length);
+    height: var(--square-length);
+    border: 0px groove var(--square1-color);
+    border-radius: 5%;
+    box-shadow: 1px 1px 3px var(--square1-color), -1px -1px 3px var(--square1-color);
+}
+
+.square2 {
+    position: fixed;
+    bottom: 30px;
+    right: 90px;
+    width: var(--square-length);
+    height: var(--square-length);
+    border: 0px groove var(--square2-color);
+    border-radius: 5%;
+    box-shadow: 1px 1px 3px var(--square2-color), -1px -1px 3px var(--square2-color);
+}
+
+.square3 {
+    position: fixed;
+    bottom: 30px;
+    right: 150px;
+    width: var(--square-length);
+    height: var(--square-length);
+    border: 0px groove var(--square3-color);
+    border-radius: 5%;
+    box-shadow: 1px 1px 3px var(--square3-color), -1px -1px 3px var(--square3-color);
+}
+
+.square4 {
+    position: fixed;
+    bottom: 90px;
+    right: 30px;
+    width: var(--square-length);
+    height: var(--square-length);
+    border: 0px groove var(--square4-color);
+    border-radius: 5%;
+    box-shadow: 1px 1px 3px var(--square4-color), -1px -1px 3px var(--square4-color);
+}
+
+.square5 {
+    position: fixed;
+    bottom: 90px;
+    right: 90px;
+    width: var(--square-length);
+    height: var(--square-length);
+    border: 0px groove var(--square5-color);
+    border-radius: 5%;
+    box-shadow: 1px 1px 3px var(--square5-color), -1px -1px 3px var(--square5-color);
+}
+
+.square6 {
+    position: fixed;
+    bottom: 150px;
+    right: 30px;
+    width: var(--square-length);
+    height: var(--square-length);
+    border: 0px groove var(--square6-color);
+    border-radius: 5%;
+    box-shadow: 1px 1px 3px var(--square6-color), -1px -1px 3px var(--square6-color);
+}
+
+@media (max-width: 800px) {
+    .shapes {
+        bottom: 10px;
+        right: 10px;
+        transform: scale(0.8);
+    }
+}

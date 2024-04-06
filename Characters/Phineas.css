@@ -1,0 +1,449 @@
+
+
+/* FOR CUSTOMIZATION */
+
+:root {
+    --face-color: #de0cda;
+    --smile-ear-spot: #8a244b;
+    --eye-border-spot: rgb(184, 36, 147);
+    --eye-small-spot: rgb(254, 254, 254);
+    --eye-pupil1: #48c289;
+    --eye-pupil2: #48c289;
+    --hair1: rgb(106, 0, 255);
+    --hair2: rgb(30, 98, 153);
+    --hair3: rgb(0, 255, 21);
+    --hair4: rgb(255, 157, 0);
+    --hair5: rgb(255, 0, 47);
+}
+
+body{
+    height: 100vh;
+    overflow: hidden;
+}
+/* ORIGINAL */
+
+/* DIFFERENT CODES FROM HERE */
+/* FACE 1 */
+.face1 {
+    position: relative;
+    top: 22%;
+    left: 5%;
+}
+
+/* head */
+.face1 .head {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 10px;
+    width: 10px;
+    /* background: red; */
+    border-bottom-left-radius: 20px;
+    border-bottom: 200px solid #ecbcb4;
+    border-left: 160px solid transparent;
+    border-right: 160px solid transparent;
+    transform: rotate(150deg);
+}
+
+/* smile */
+.face1 .head::before {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 200px;
+    /* background-color: red; */
+    top: 100px;
+    left: -36px;
+    border: solid 5px #a1665e;
+    border-color: #a1665e transparent transparent transparent;
+    border-radius: 50%/10px 10px 0 0;
+}
+
+/* ear */
+.face1 .head::after {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 34px;
+    background-color: #ecbcb4;
+    top: 110px;
+    left: -122px;
+    border: 2px solid #a1665e;
+    border-bottom: none;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    transform: rotate(-51deg);
+}
+
+/* ------------------------------ */
+/* whole left eye */
+.face1 .eyeL {
+    position: absolute;
+    left: 85px;
+    top: -40px;
+    height: 70px;
+    width: 80px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 2px solid #000;
+    transform: rotate(-10deg);
+    
+}
+
+/* dark part of left eye */
+.face1 .eyeL::before {
+    content: "";
+    position: absolute;
+    height: 22px;
+    width: 26px;
+    border-radius: 50%;
+    background: #1d1b38;
+    transform: rotate(-10deg);
+    top: 28px;
+    left: 10px;
+
+}
+
+/* white part of left eye */
+.face1 .eyeL::after {
+    content: "";
+    position: absolute;
+    height: 8px;
+    width: 10px;
+    background-color: #fff;
+    top: 35px;
+    left: 24px;
+    border-radius: 50%;
+    transform: rotate(-10deg);
+    /* 3 dots on face */
+    box-shadow: 100px 36px 0 -1px #a1665e,
+    70px 36px 0 -1px #a1665e,
+    85px 50px 0 -1px #a1665e;
+    /* offset-X offset-Y blur-radius spread-radius color */
+}
+
+/* ------------------------------ */
+/* whole right eye */
+.face1 .eyeR {
+    position: absolute;
+    left: 30px;
+    top: -15px;
+    height: 70px;
+    width: 80px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 2px solid #000;
+    transform: rotate(-10deg);
+    z-index: -1;
+}
+
+/* dark part of right eye */
+.face1 .eyeR::before {
+    content: "";
+    position: absolute;
+    height: 22px;
+    width: 26px;
+    border-radius: 50%;
+    background: #1d1b38;
+    transform: rotate(-10deg);
+    top: 28px;
+    left: 10px;
+
+}
+
+/* white part of right eye */
+.face1 .eyeR::after {
+    content: "";
+    position: absolute;
+    height: 8px;
+    width: 10px;
+    background-color: var(--eye-small-spot);
+    top: 35px;
+    left: 24px;
+    border-radius: 50%;
+    transform: rotate(-10deg);
+}
+
+/* ------------------------------ */
+/* hairs */
+.face1 .hair {
+    position: absolute;
+    top: 94px;
+    left: 154px;
+}
+
+.face1 .hair>div:nth-child(1) {
+    position: absolute;
+    background: transparent;
+    height: 30px;
+    width: 100px;
+    border-top: 20px solid red;
+    border-radius: 50px 40px 0 0;
+    bottom: 140px;
+    left: 40px;
+    transform: rotate(35deg);
+}
+
+.face1 .hair>div:nth-child(2) {
+    position: absolute;
+    background: transparent;
+    height: 30px;
+    width: 100px;
+    border-top: 20px solid red;
+    border-radius: 50px 40px 0 0;
+    bottom: 145px;
+    left: 35px;
+    transform: rotate(70deg);
+}
+
+.face1 .hair>div:nth-child(3) {
+    position: absolute;
+    background: transparent;
+    height: 30px;
+    width: 80px;
+    border-top: 20px solid red;
+    border-radius: 50px 40px 0 0;
+    bottom: 160px;
+    left: 50px;
+    transform: rotate(120deg);
+}
+
+.face1 .hair>div:nth-child(4) {
+    position: absolute;
+    background: transparent;
+    height: 30px;
+    width: 100px;
+    border-top: 20px solid red;
+    border-radius: 50px 40px 0 0;
+    bottom: 137px;
+    left: 50px;
+    transform: rotate(8deg);
+}
+
+.face1 .hair>div:nth-child(5) {
+    position: absolute;
+    background: transparent;
+    height: 30px;
+    width: 50px;
+    border-top: 20px solid red;
+    border-radius: 50px 50px 0 0;
+    bottom: 150px;
+    left: 90px;
+    transform: rotate(-10deg);
+}
+
+
+/* -------------------------------------------------------- */
+
+/* CUSTOMIZED */
+/* DIFFERENT CODE FROM HERE */
+/* FACE 2 */
+
+.face2 {
+    position: relative;
+    top: 62%;
+    left: 40%;
+}
+
+
+/* head */
+.face2 .head {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 10px;
+    width: 10px;
+    /* background: red; */
+    border-bottom-left-radius: 20px;
+    border-bottom: 200px solid var(--face-color);
+    border-left: 160px solid transparent;
+    border-right: 160px solid transparent;
+    transform: rotate(150deg);
+}
+
+/* smile */
+.face2 .head::before {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 200px;
+    /* background-color: red; */
+    top: 100px;
+    left: -36px;
+    border: solid 5px var(--smile-ear-spot);
+    border-color: var(--smile-ear-spot) transparent transparent transparent;
+    border-radius: 50%/10px 10px 0 0;
+}
+
+/* ear */
+.face2 .head::after {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 34px;
+    background-color: var(--face-color);
+    top: 110px;
+    left: -122px;
+    border: 2px solid var(--smile-ear-spot);
+    border-bottom: none;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    transform: rotate(-51deg);
+}
+
+/* ------------------------------ */
+/* whole left eye */
+.face2 .eyeL {
+    position: absolute;
+    left: 85px;
+    top: -40px;
+    height: 70px;
+    width: 80px;
+    background-color: var(--eye-small-spot);
+    border-radius: 50%;
+    border: 2px solid var(--eye-border-spot);
+    transform: rotate(-10deg);
+    
+}
+
+/* dark part of left eye */
+.face2 .eyeL::before {
+    content: "";
+    position: absolute;
+    height: 22px;
+    width: 26px;
+    border-radius: 50%;
+    background: var(--eye-pupil1);
+    transform: rotate(-10deg);
+    top: 28px;
+    left: 10px;
+
+}
+
+/* white part of left eye */
+.face2 .eyeL::after {
+    content: "";
+    position: absolute;
+    height: 8px;
+    width: 10px;
+    background-color: var(--eye-small-spot);
+    top: 35px;
+    left: 24px;
+    border-radius: 50%;
+    transform: rotate(-10deg);
+    /* 3 dots on face */
+    box-shadow: 100px 36px 0 -1px var(--smile-ear-spot),
+    70px 36px 0 -1px var(--smile-ear-spot),
+    85px 50px 0 -1px var(--smile-ear-spot);
+    /* offset-X offset-Y blur-radius spread-radius color */
+}
+
+/* ------------------------------ */
+/* whole right eye */
+.face2 .eyeR {
+    position: absolute;
+    left: 30px;
+    top: -15px;
+    height: 70px;
+    width: 80px;
+    background-color: var(--eye-small-spot);
+    border-radius: 50%;
+    border: 2px solid var(--eye-border-spot);
+    transform: rotate(-10deg);
+    z-index: -1;
+}
+
+/* dark part of right eye */
+.face2 .eyeR::before {
+    content: "";
+    position: absolute;
+    height: 22px;
+    width: 26px;
+    border-radius: 50%;
+    background: var(--eye-pupil2);
+    transform: rotate(-10deg);
+    top: 28px;
+    left: 10px;
+
+}
+
+/* white part of right eye */
+.face2 .eyeR::after {
+    content: "";
+    position: absolute;
+    height: 8px;
+    width: 10px;
+    background-color: var(--eye-small-spot);
+    top: 35px;
+    left: 24px;
+    border-radius: 50%;
+    transform: rotate(-10deg);
+}
+
+/* ------------------------------ */
+/* hairs */
+.face2 .hair {
+    position: absolute;
+    top: 94px;
+    left: 154px;
+}
+
+.face2 .hair>div:nth-child(1) {
+    position: absolute;
+    background: transparent;
+    height: 30px;
+    width: 100px;
+    border-top: 20px solid var(--hair1);
+    border-radius: 50px 40px 0 0;
+    bottom: 140px;
+    left: 40px;
+    transform: rotate(35deg);
+}
+
+.face2 .hair>div:nth-child(2) {
+    position: absolute;
+    background: transparent;
+    height: 30px;
+    width: 100px;
+    border-top: 20px solid var(--hair2);
+    border-radius: 50px 40px 0 0;
+    bottom: 145px;
+    left: 35px;
+    transform: rotate(70deg);
+}
+
+.face2 .hair>div:nth-child(3) {
+    position: absolute;
+    background: transparent;
+    height: 30px;
+    width: 80px;
+    border-top: 20px solid var(--hair3);
+    border-radius: 50px 40px 0 0;
+    bottom: 160px;
+    left: 50px;
+    transform: rotate(120deg);
+}
+
+.face2 .hair>div:nth-child(4) {
+    position: absolute;
+    background: transparent;
+    height: 30px;
+    width: 100px;
+    border-top: 20px solid var(--hair4);
+    border-radius: 50px 40px 0 0;
+    bottom: 137px;
+    left: 50px;
+    transform: rotate(8deg);
+}
+
+.face2 .hair>div:nth-child(5) {
+    position: absolute;
+    background: transparent;
+    height: 30px;
+    width: 50px;
+    border-top: 20px solid var(--hair5);
+    border-radius: 50px 50px 0 0;
+    bottom: 150px;
+    left: 90px;
+    transform: rotate(-10deg);
+}

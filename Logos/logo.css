@@ -185,3 +185,15 @@ fill: var(--color-primary);
     fill: green;
 }
 /* django icon end */
+
+/* mysql icon start */
+.icons .icon-mysql svg {
+    height: 40px;
+}
+.icons .icon-mysql path {
+    fill: #00678C;
+}
+.icons .icon-mysql:hover path {
+    fill: green;
+}
+/* mysql icon end */
